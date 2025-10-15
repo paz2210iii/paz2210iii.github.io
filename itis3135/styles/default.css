@@ -1,13 +1,7 @@
-/*https://coolors.co/1a936f-aaf683-5fad56*/
-
-body {
-    background-color: #AAF683;
-}
-
-h1, h2, h3 {
-    color: #1A936F;
-    text-align: center;
-}
+/*https://coolors.co/0E664C-aaf683-5fad56*/
+/*new coolers  link
+https://coolors.co/1a936f-5fad56-aaf683-084c38-333333
+*/
 
 img {
     display: block;
@@ -15,15 +9,95 @@ img {
     margin-right: auto;
     width: 50%;
 }
+/* === Base Colors ===
+   Primary Green: #1A936F
+   Accent Green:  #5FAD56
+   Light Background: #AAF683
+   Deep Green (for text): #084C38
+   Neutral Gray (for contrast): #333333
+*/
 
-figcaption {
+body {
+    background-color: #AAF683;
+    color: #084C38; /* fallback for general text */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* === Headings === */
+  h1, h2, h3 {
+    color: #1A936F;  
     text-align: center;
-    font-style: italic;
-    margin-top: 10px;
-}
-
-nav {
+  }
+  
+  /* === Paragraphs === */
+  p {
+    color: #084C38;  
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 20px;
+  }
+  
+  /* === Lists === */
+  li {
+    color: #084C38; 
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }
+  
+  li::marker {
+    color: #1A936F;
+  }
+  /* === Links === */
+  a {
+    color: #0E664C;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #084C38;
+    text-decoration: none;
+  }
+  
+  /* === Navigation Bar === */
+  nav {
     background-color: #5FAD56;
     padding: 10px;
     text-align: center;
+  }
+  
+  nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 8px;
+  }
+  
+  a:hover,
+  a.active {
+    color: #084C38;
+    background-color: #AAF683;
+    padding: 3px 6px;
+    border-radius: 4px;
+  }
+  
+  /* === Footer === */
+  footer {
+    background-color: #5FAD56;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+  
+  footer a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+  
+  footer a:hover {
+    color: #084C38;
 }

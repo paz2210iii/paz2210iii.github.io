@@ -7,7 +7,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 35%;
 }
 /* === Base Colors ===
    Primary Green: #1A936F
@@ -19,7 +19,7 @@ img {
 
 body {
     background-color: #AAF683;
-    color: #084C38; /* fallback for general text */
+    color: #084C38; 
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -51,6 +51,7 @@ body {
   li::marker {
     color: #1A936F;
   }
+  
   /* === Links === */
   a {
     color: #0E664C;
@@ -77,7 +78,7 @@ body {
   }
   
   a:hover,
-  a.active {
+  .active {
     color: #084C38;
     background-color: #AAF683;
     padding: 3px 6px;

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reading Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: sandybrown;
+        }
+
+        h1 {
+            color: bisque;
+            text-align: center;
+        }
+
+        h2 {
+            color: sienna;
+            text-align: center;
+        }
+
+        header, footer {
+            background-color: peru;
+            padding: 10px;  
+            text-align: center;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: sienna;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+
+        #aboutMe, #when, #where, #how, #why, #aiPrompts {
+            display: none;
+            margin: 20px;
+            padding: 15px;
+            border: 2px solid sienna;
+            border-radius: 10px;
+            background-color: wheat;
+        }
+
+        #what {
+            display: block;
+            margin: 20px;
+            padding: 15px;
+            border: 2px solid sienna;
+            border-radius: 10px;
+            background-color: wheat;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border-radius: 10px;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Reading</h1>
+        <nav>
+            <button onclick="toggleSections('aboutMe')">About Me</button> &#128218;
+            <button onclick="toggleSections('what')">What</button> &#128218;
+            <button onclick="toggleSections('when')">When</button> &#128218;
+            <button onclick="toggleSections('where')">Where</button> &#128218;
+            <button onclick="toggleSections('how')">How</button> &#128218;
+            <button onclick="toggleSections('why')">Why</button> &#128218;
+            <button onclick="toggleSections('aiPrompts')">AI Prompts</button>
+        </nav>
+    </header>
+    <main>
+        <!-- About me section -->
+        <section id="aboutMe">
+            <h2>About Me</h2>
+            <figure>
+                <img src="images/about-me-selfie.jpg" alt="A Selfie of Ethan Arguello">
+                <figcaption>Selfie of me at atkins library</figcaption>
+            </figure>
+            <p>
+                Hello! My name is Ethan Arguello and I am a student at the University of North Carolina at Charlotte.
+                I have always enjoyed reading books of all kinds since I was a child.
+                Reading has always been a way for me to escape reality and enter new worlds full of adventure, mystery, and excitement.
+                In my free time, I enjoy sitting in my reading nook with a good book and a cup of hot coco.
+            </p>
+            <form aria-label="Reading Survey">
+                <label>What’s your favorite book?</label>
+                <input type="text" placeholder="Type a title...">
+                <button type="button">Submit</button>
+            </form>
+        </section>
+
+        <!-- What section -->
+        <section id="what">
+            <h2>What do I like to read?</h2>
+            <figure>
+                <img src="images/Gemini_Books.jpg" alt="An AI stack of various books including fiction, non-fiction, graphic novels, manga.">
+                <figcaption>My Favorite Types of Books to Read</figcaption>
+                <p><em>generate an image of popular fiction, nonfiction, graphic novels and manga spread out</em></p>
+            </figure>
+            <p>
+                I enjoy reading both fiction, non-fiction books, graphic novels, and manga.
+                one of my favorite authors is J.K. Rowling, who wrote the <cite>Harry Potter</cite> series. 
+                I used to read diary of a wimpy kid and the magic tree house series when I was younger. 
+            </p>
+            <ul>
+                <li>Nowadays I read a lot of manga, some of them include</li>
+                <ul>
+                    <li>Solo Leveling</li>
+                    <li>My Hero Academia</li>
+                    <li>Demon Slayer</li>
+                    <li>One Piece</li>
+                    <li>Death Note</li>
+                    <li>Hunter x Hunter</li>
+                    <li>One Punch Man</li>
+                    <li>Chainsaw Man</li>
+                    <li>Jujustu Kaisen</li>
+                </ul>
+            </ul>
+        </section>
+
+        <!-- When section -->
+        <section id="when">
+            <h2>When are the best times I like to read?</h2>
+            <figure>
+                <img src="images/Gemini_warmhouse.jpg" alt="A lit, warm house in the middle of a snowstorm.">
+                <figcaption>My favorite type of setting while reading</figcaption>
+                <p><em>generate an image of a warm house in a snow storm</em></p>
+            </figure>
+            <p>
+                Any time is a good time to read!
+                However, I find that reading after doing my homework and before bed is the most relaxing and enjoyable time.
+                It helps me unwind and clear my mind before going to sleep.
+                Sometimes I can find some time while waiting for doctors appointments or other errands to read a few pages.
+            </p>
+            <br>
+            <p>
+                My favorite seasonal time to read is during the fall and winter months. 
+                The cooler weather and shorter days make it the perfect time to curl up with a good book and a warm blanket.
+                Drinking a warm beverage like hot cocoa with marshmellows while reading really makes the experience way better!
+                It melts all my worries away
+            </p>
+        </section>
+
+        <!-- Where section -->
+        <section id="where">
+            <h2>Where are the best places for me to read?</h2>
+            <figure>
+                <img src="images/cozy-book-nook.jpg" alt="A cozy reading nook with a soft chair, bookshelves, and warm lighting.">
+                <figcaption>Cozy Chair, Hot Coco, Furry Friend, and A Good Book to Read</figcaption>
+                <p><em>Generate an image of a cozy book nook</em></p>
+            </figure>
+            <p>
+                Almost anywhere can be a good place to read however the more I read the more I find certain places to be better than others.
+                Some people choose local book cafes or coffee shops to read in.
+                I prefer the quiet and ease of access to books of a public library. 
+            </p>
+            <p>    
+                One of these days when I have the time I really want to craft a reading nook.
+                Some choices for inspiration for me are to get a soft sinking sofa chair, beanbag, or small bed. 
+                probably going to pair it with a comfy pillow, warm and soft blanket and a stockpile some high quality hot chocolate and maybe make homemade marshmellows instead of the storebought ones.
+                I currently don't really have the space or the money for a decent reading nook but I might try to make a small ceiling corner with a comfy bed and good air conditioning.
+                I would even have a nice sturdy ladder to climb up to it!
+            </p>
+        </section>
+
+        <!-- How section -->
+        <section id="how">
+            <h2>How did I start reading?</h2>
+            <figure>
+                <img src="images/gemini_mom_reading.jpg" alt="A Mother Reading her child a bedtime story at night.">
+                <figcaption>My mom reading me a bedtime story</figcaption>
+                <p><em>generate an image of a mother reading to her child at night</em></p>
+            </figure>
+            <p>
+                It all started really when I was a kid and my mom used to read me bedtime stories.
+                I really loved those picturebooks of the classic fairy tales like <cite>The 500 Hats Of Bartholomew Cubbins</cite> and the <cite>Cars</cite> picture books.
+                As I got older I started reading chapter books like <cite>Magic Tree House</cite> and <cite>Diary of a Wimpy Kid</cite>.
+                Then of course I got into the <cite>Harry Potter</cite> series and that really sparked my love for reading.
+            </p>
+            <br>
+            <p>
+                But reading for school was always a chore for me.
+                I kinda lost my will to read for a while in middle school and high school due to all the required reading lists, tests, quizzes, and essays.
+                I did very much enjoy reading shakespeare and <cite>The Outsiders</cite> in school but other than that I really stopped enjoying reading much if any other books. 
+                And it wasn't until I found manga and graphic novels that I really started to enjoy reading again albeit with more pictures funnily enough
+            </p>
+        </section>
+
+        <!-- Why section -->
+        <section id="why">
+            <h2>Why do I still read</h2>
+            <figure>
+                <img src="images/Gemini_knowledge_reading.jpg" alt="A person reading a book with a glowing light coming from the pages symbolizing knowledge.">
+                <figcaption>Reading makes you smarter</figcaption>
+                <p><em>generate an image of a person reading getting smarter</em></p>
+            </figure>
+            <p>
+                To start the reasons of why I still read I though to include this quote by Mark Twain. 
+            </p>
+            <p>
+                <strong>"The man who does not read has no advantage over the man who cannot read". </strong>
+            </p>
+            <p>
+                Reading is a fun way to pass the time, however it is also a great way to learn new things, expand my vocabulary, and improve my focus and concentration.
+                Reading can also help reduce stress, improve your memory, and enhance your creativity.
+                Many Studies have shown that reading can also improve your mental health, increase cognitive function, and improve sleep quality.
+            </p>
+            <p>
+                Aside from all the health benefits it is also a great way to pass the time, connect with fellow reader and friends, and enhance your grasp on the world as we know it
+                And you can never run out of books to read! There is always something new and exciting to discover within the pages of a book. 
+            </p>
+        </section>
+
+        <!-- AI prompt section -->
+        <section id="aiPrompts">
+            <h2>AI Prompts</h2>
+            <ul>
+                <li>Source: Gemini.
+                    <ul>
+                        <li>How to hide/show sections in html using javascript</li>
+                        <li>How to display none for all sections in javascript html</li>
+                    </ul>
+                </li>
+                <li>source: ChatGPT.
+                    <ul>
+                        <li><em>Linked my html</em><br></li>
+                        <li>When I click my "when" button, my script hides all sections instead of hiding all sections instead of when. 
+                            Can you see what is wrong with my code?</li>
+                        <li><em>Pasted the rubric</em></li>
+                        <li>Can you grade my index file based on this rubric</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <p>Designed by 
+                <a href="../arguellowebwork.com/index.html">Arguello Webworks ©2025</a>
+            </p>
+        </nav>
+    </footer>
+    <script>
+        function toggleSections(id) {
+            const sections = document.getElementsByTagName('section');
+            for (const section of sections) {
+                section.style.display = 'none';
+            }
+            const target = document.getElementById(id);
+            if (target) target.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

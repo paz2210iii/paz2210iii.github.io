@@ -31,7 +31,7 @@
             padding: 1rem;
         }
 
-        h1, h2, h3{
+        h1, h2 {
             background-image: linear-gradient(to right, #00FF7F, #00FFFF);
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -65,7 +65,10 @@
             color: #00FF7F;
         }
 
-        p {
+        p:not(.tagline) {
+            color: #CCCCCC
+
+            ;
             margin: 1rem 1rem;
         }
 
@@ -99,7 +102,11 @@
             <li>We will pay you to use the service if and when possible</li>
             <li>We donate all proceeds to Colossal Biosciences, so we can bring back dinosaurs</li>
         </ul>
-        <p>We cannot express in words what we are willing to do for you. the sky is the limit. We will code till the Wi-Fi dies, or the heat death of the universe (Which ever comes first)</p>
+        <p>
+            We cannot express in words what we are willing to do for you. 
+            The sky is the limit. 
+            We will code till the Wi-Fi dies, or the heat death of the universe (Which ever comes first)
+        </p>
         <br>
         <br>
         <section>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arguello Webworks ~ Web Services</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
         /* Palette: https://coolors.co/0a0a0f-0e1117-00ffff-00e0c6-ffffff */
@@ -13,17 +13,31 @@
             color: #FFFFFF;
             font-family: 'Segoe UI', Arial, sans-serif;
             line-height: 1.6;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
         }
 
-        header, footer {
+        header {
+            background: linear-gradient(90deg, #00FF7F 0%, #0A0A0F 30%,  #0A0A0F 70%, #00FFFF 100%);
+            border-bottom: 2px solid #00FFFF;
+            box-shadow: 0 0 30px #00E0C6AA;
+            padding: 1.2rem 0;
+            text-align: center;
+        }
+
+        footer {
             background-color: #0E1117;
             color: #FFFFFF;
             text-align: center;
             padding: 1rem;
         }
 
-        h1, h2, h3 {
-            color: #00FFFF;
+        h1, h2, h3{
+            background-image: linear-gradient(to right, #00FF7F, #00FFFF);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            text-align: center;
+            font-family: 'Exo 2', 'Roboto', sans-serif;
         }
 
         a {
@@ -35,29 +49,69 @@
             color: #00FFFF;
         }
 
-        button, .highlight {
-            background-color: #00FFFF;
-            color: #0A0A0F;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            cursor: pointer;
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
         }
 
-        button:hover {
-            background-color: #00E0C6;
-        }   
+        ul {
+            list-style: none;
+        }
+
+        li::before {
+            content: "✓ ";
+            color: #00FF7F;
+        }
+
+        p {
+            margin: 1rem 1rem;
+        }
+
+        p#tagline {
+            font-style: italic;
+            color: #00E0C6;
+        }
+
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Arguello WebWorks</h1>
+        <div class="container">
+            <img src="images/nicubunu_Blue_flower.png" alt="a blue flower graphic" width="50px" height="50px">
+            <h1>Arguello WebWorks</h1>
+        </div>
+        <p class="tagline">Building beyond boundaries.</p>
     </header>
     <main>
-        <p>this is my design firm. WIP</p>
+        <h2>Arguello Webworks Web Services</h2>
+        <p>At Arguello Webworks, your dreams can be realized through the HTML, CSS, and JavaScript format</p>
+        <ul>
+            <li>thousands of happy customers worldwide</li>
+            <li>Quality assurance</li>
+            <li>Best in the business</li>
+            <li>Fastest customer service response times</li>
+            <li>As much as a 200% increase in revenue after using our services</li>
+            <li>Cheapest Source in all of Northern Pangea</li>
+            <li>Shown to be more effective than placebo</li>
+            <li>We will pay you to use the service if and when possible</li>
+            <li>We donate all proceeds to Colossal Biosciences, so we can bring back dinosaurs</li>
+        </ul>
+        <p>We cannot express in words what we are willing to do for you. the sky is the limit. We will code till the Wi-Fi dies, or the heat death of the universe (Which ever comes first)</p>
+        <br>
+        <br>
+        <section>
+            <p><strong>Contact Info: </strong></p>
+            
+            <p>Email: test@arguellowebwork.com</p>
+            <p>Phone: (777)-234-5678</p>
+            <p>Address: Platform 9¾, New Salem MA 02139 USA</p>
+        </section>
     </main>
     <footer>
-        
+        <p>© 2025 Arguello Webworks. All rights reserved.</p>
     </footer>
 </body>
 </html>
